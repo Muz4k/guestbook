@@ -54,7 +54,7 @@ class ConferenceController extends AbstractController
      * @throws LoaderError
      * @throws RuntimeError
      * @throws SyntaxError
-     * @Route("/conference/{id}", name="conference")
+     * @Route("/conference/{slug}", name="conference")
      */
     public function show(Request $request, Conference $conference, CommentRepository $commentRepository, ConferenceRepository $conferenceRepository)
     {
