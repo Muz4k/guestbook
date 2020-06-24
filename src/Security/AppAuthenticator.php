@@ -41,8 +41,7 @@ class AppAuthenticator extends AbstractFormLoginAuthenticator implements Passwor
 
     public function supports(Request $request)
     {
-        return self::LOGIN_ROUTE === $request->attributes->get('_route')
-            && $request->isMethod('POST');
+        return self::LOGIN_ROUTE === $request->attributes->get('_route') && $request->isMethod('POST');
     }
 
     public function getCredentials(Request $request)
@@ -97,7 +96,6 @@ class AppAuthenticator extends AbstractFormLoginAuthenticator implements Passwor
         }
 
         return new RedirectResponse($this->urlGenerator->generate('easyadmin'));
-
     }
 
     protected function getLoginUrl()

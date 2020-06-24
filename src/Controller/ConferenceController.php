@@ -31,7 +31,6 @@ class ConferenceController extends AbstractController
         $this->entityManager = $entityManager;
         $this->twig = $twig;
         $this->bus = $bus;
-
     }
 
     /**

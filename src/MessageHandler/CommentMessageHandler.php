@@ -31,8 +31,7 @@ class CommentMessageHandler implements MessageHandlerInterface
         WorkflowInterface $commentStateMachine,
         MailerInterface $mailer, string $adminEmail,
         LoggerInterface $logger = null
-    )
-    {
+    ) {
         $this->entityManager = $entityManager;
         $this->spamChecker = $spamChecker;
         $this->commentRepository = $commentRepository;

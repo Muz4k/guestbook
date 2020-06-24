@@ -147,5 +147,4 @@ class Conference
             $this->slug = (string) $slugger->slug((string) $this)->lower();
         }
     }
-
 }
