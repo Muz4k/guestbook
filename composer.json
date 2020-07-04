@@ -1,4 +1,6 @@
 {
+    "name": "muz4k/guestbook",
+    "description": "symfony 5 project",
     "type": "project",
     "license": "proprietary",
     "require": {
