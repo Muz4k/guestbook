@@ -48,7 +48,6 @@ class AdminController extends AbstractController
         if ($accepted) {
             $this->bus->dispatch(new CommentMessage($comment->getId()));
         }
-
         return $this->render('admin/review.html.twig', [
             'transition' => $transition,
             'comment' => $comment,
